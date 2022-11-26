@@ -31,13 +31,28 @@ malesdata=filter(FinalData,sex=="M")
 
 
 ## Females
+```{r}
+femalesdata=filter(FinalData,sex=="F")
+```
 
 
 ## LGBTQ
 
+```{r}
+LGBTQ=filter(FinalData,sex=="gay")
+```
+
+
+```{r}
+LGBTQ=filter(FinalData,sex=="straight")
+```
+
 
 
 ## Druggies
+```{r}
+Druggies=filter(FinalData)
+```
 
 
 # Overall Results and Conclusions
