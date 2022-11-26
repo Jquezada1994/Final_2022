@@ -135,21 +135,18 @@ Based on the data above, among the females who contracted Covid91 42.82% receive
 ## LGBTQ
 
 ```{r}
-LGBTQ=filter(FinalData,sex=="gay")
+lgbtqdata=filter(FinalData,LGBTQ=="gay")
 ```
 
 
 
 ## Druggies
 ```{r}
-DrugUser=filter(FinalData,sex=='M')
+druggiesdata=filter(FinalData,DrugUser=='yes')
 ```
 
 
 
 
-```{r}
-DrugUser=filter(FinalData,sex=='F')
-```
 
 # Overall Results and Conclusions
