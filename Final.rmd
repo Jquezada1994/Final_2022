@@ -150,6 +150,26 @@ barchartGC(~infected + treatment,data=lgbtqdata, type="percent")
 
 ```
 
+Based on the graph above,among the LGBTQ community those who contracted Covid91 about more than 80% of them recieved the Covid 91 treatment as recieved the placebo.The graph suggest that the treatment not effective fot the LGBTQ
+
+##Numerical
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=femalesdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
+##Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
 ## Druggies
 ```{r}
 druggiesdata=filter(FinalData,DrugUser=='yes')
