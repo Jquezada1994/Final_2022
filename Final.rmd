@@ -184,7 +184,10 @@ Chi squared test has a p-value of 0.0000001104 which is less than 0.05 meaning w
 druggiesdata=filter(FinalData,DrugUser=='yes')
 ```
 
+$H_0$: The treatment has no effect on drug users.  
+$H_A$: The treatment has a significant effect on drug users.
 
+###Graphical Description
 
 
 
